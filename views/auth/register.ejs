@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body class="bg-primary">
+    <div class="container">
+        <div class="row vh-100 align-items-center justify-content-center">
+            <div class="col-md-6">
+                <form action="/register" method="post" class="shadow p-3 rounded-5 bg-light">
+                    <div class="mb-3">
+                        <h1 class="text-primary text-uppercase text-center display-2 d-block">Register</h1>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" name="email" class="form-control" placeholder="Email address..." id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" name="password" placeholder="Password..." class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Confirme password:</label>
+                      <input type="password" name="password_confirme" placeholder="Confirme password..." class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <span>Already have account? <a href="/login">login now</a></span>
+                      </div>
+                    <button type="submit" class="w-100 btn-lg btn btn-primary">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
